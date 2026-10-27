@@ -1,0 +1,142 @@
+.navigatie{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(160, 234, 249);
+}
+.navigatie > li {
+    float: left;
+}
+.navigatie > li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+.navigatie > li a:hover:not(.active) {
+    background-color: rgb(101, 226, 251);
+}
+
+h1, .column {
+    text-align: center;
+    background-color: rgb(251, 183, 248);
+    border-radius: 10px;
+    margin: 5px;
+}
+
+h1 {
+    padding: 20px 0 20px 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, montserrat, sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.column {
+    flex: 33%;    
+    max-width: 32.5%;    
+    padding:  30px;
+}
+
+.hobbies {
+    text-align: center;
+    max-width: 75%;    
+    padding: 0px 0px 0px 25%;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". . table"
+        ". . table"
+        ". . table";
+    gap: 15px;
+    padding: 30px;
+}
+
+.grid> div {
+    text-align: center;
+    background-color: rgb(251, 183, 248);
+    border-radius: 10px;
+    padding: 30px;
+}
+.grid> .table {
+    grid-area: table;
+    grid-row: 1/span 3;
+}
+
+.table> table{
+    width: 100%;
+}
+
+.table td, .table th {
+    border: solid 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+form {
+    width: 25%; 
+    padding: 15px;
+    border-radius: 1rem;
+    border: 2px solid rgb(101, 226, 251);
+    float: right;
+    margin: 10px 20px;
+}
+
+#rowcontact {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 0 0 10%;
+}
+
+input, select, textarea {
+    border: 2px solid rgb(251, 183, 248);
+    border-radius: 0.5rem;
+    color: #000
+}
+
+label {
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #000;
+}
+
+.cv {
+    text-align: center;
+    padding: 10px 15% 10px 15%;
+    background-color: rgb(251, 183, 248);
+    border-radius: 10px;
+    margin: 10px 10% 0 10%;
+}
+
+
+#start-foto {
+    width: 50%;
+}
+
+#Nijlen-foto {
+    width: 75%;
+}
