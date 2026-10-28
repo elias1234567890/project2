@@ -247,7 +247,8 @@ body.project2 .skip-link:focus {
     top: 12px;
 }
 
-body.project2 .hero {
+body.project2 .hero,
+body.project2 .page-heading {
     padding-top: 45px;
     padding-bottom: 35px;
 }
@@ -332,6 +333,148 @@ body.project2 .social-links a {
     color: #20252b;
 }
 
+body.project2 .profile-card {
+    overflow: hidden;
+    border: 1px solid #d5e5eb;
+    border-radius: 6px;
+    background-color: rgb(251, 183, 248);
+}
+
+body.project2 .profile-photo {
+    display: block;
+    width: 100%;
+}
+
+body.project2 .profile-details {
+    padding: 24px;
+}
+
+body.project2 .location-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+body.project2 .resume-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d5e5eb;
+}
+
+body.project2 .resume-title {
+    margin-bottom: 20px;
+}
+
+body.project2 .timeline article {
+    margin-bottom: 20px;
+}
+
+body.project2 .timeline-label {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+body.project2 .work-entry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+body.project2 .language-list > div > div {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(251, 183, 248);
+}
+
+body.project2 .skills-section {
+    margin-top: 25px;
+    background-color: rgb(160, 234, 249);
+}
+
+body.project2 .splide {
+    padding: 0 40px;
+}
+
+body.project2 .skill-card {
+    height: 220px;
+    padding: 25px 8px;
+    border-radius: 6px;
+    background-color: white;
+    text-align: center;
+}
+
+body.project2 .skill-card img {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+body.project2 .skill-card p {
+    font-size: 0.85rem;
+}
+
+body.project2 .splide__arrow--prev {
+    left: 0;
+}
+
+body.project2 .splide__arrow--next {
+    right: 0;
+}
+
+body.project2 .carousel-hint {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+body.project2 .experience-row {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d5e5eb;
+}
+
+body.project2 .experience-photo {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 320px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+body.project2 .experience-photo > img:first-child {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+body.project2 .club-badge {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    width: 75px;
+    height: 75px;
+    padding: 8px;
+    background-color: white;
+    object-fit: contain;
+}
+
+body.project2 .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+body.project2 .tag {
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: rgb(251, 183, 248);
+    font-size: 0.85rem;
+}
+
 @media (max-width: 767.98px) {
     body.project2 h1 {
         font-size: 2rem;
@@ -343,5 +486,27 @@ body.project2 .social-links a {
 
     body.project2 .social-links {
         justify-content: flex-start;
+    }
+
+    body.project2 .skill-card {
+        height: 195px;
+        padding: 20px 4px;
+    }
+
+    body.project2 .skill-card img {
+        width: 42px;
+        height: 42px;
+    }
+
+    body.project2 .skill-card h3 {
+        font-size: 0.9rem;
+    }
+
+    body.project2 .skill-card p {
+        font-size: 0.7rem;
+    }
+
+    body.project2 .splide {
+        padding: 0 32px;
     }
 }

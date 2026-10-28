@@ -1,40 +1,345 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/fe875ab16f.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="afbeeldingen/favicon.ico">
-</head>
-<body>
-    <ul class ="navigatie">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="ervaring.html">Ervaring</a></li>
-        <li><a href="hobbies_en_Interesses.html">Hobbies en Interesses</a></li>
-        <li><a href="contact.html">Contacteer mij</a></li>
-    </ul>
-    
-    <div class="header">
-        <h1>Mijn CV</h1>
-    </div>
+    <head>
+        <!-- Paginatitel, metadata en opmaakbestanden -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="De opleiding, werkervaring, talen en programmeervaardigheden van Elias Heremans."
+        />
+        <meta name="author" content="Elias Heremans" />
+        <meta name="theme-color" content="#ffffff" />
+        <title>Mijn CV | Elias Heremans</title>
+        <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 
-    <div class="cv">
-        <p>
-            Hallo, ik ben Elias Heremans. ik ben 20 jaar oud en woon in Nijlen.
-        </p>
-        <p>
-            Ik ben bezig met mijn graduaat opleiding programmeren aan de Thomas More hogeschool in Geel.<br> Ik heb hiervoor ook een half jaar revalidatiewetenschapppen en kinesitherapie gestudeerd aan de Universiteit van Antwerpen.<br> Als ook sport-wetenschappen en stem in het middelbaar.
-        </p>
-        <p>
-            Ik ben het best in html en C# voor nu en heb een beetje ervaring met python en javascript.
-        </p>
-        <p>
-            Ik doe ook graag voetbal in mijn vrije tijd en ook videogames spelen als ik niet met andere dingen bezig ben.
-        </p>
-    </div>
+        <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="vendor/splide/splide.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="vendor/bootstrap/bootstrap.bundle.min.js" defer></script>
+        <script src="vendor/splide/splide.min.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </head>
+    <body id="top" class="project2">
+        <a class="skip-link" href="#inhoud">Naar de inhoud</a>
 
-</body>
+        <!-- Navigatie: hetzelfde menu op elke pagina -->
+        <header class="site-header">
+            <nav class="navbar navbar-expand-lg container" aria-label="Hoofdnavigatie">
+                <a class="navbar-brand brand" href="index.html">Elias Heremans</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navigatie"
+                    aria-controls="navigatie"
+                    aria-expanded="false"
+                    aria-label="Menu openen of sluiten"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigatie">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="cv.html">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ervaring.html">Ervaring</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hobbies.html">Hobby’s</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                Contact
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hoofdinhoud van deze pagina -->
+        <main id="inhoud">
+            <section class="page-heading container">
+                <h1>Mijn CV</h1>
+                <p>
+                    Een nieuwsgierige student met een sportieve achtergrond en een groeiende passie
+                    voor programmeren.
+                </p>
+            </section>
+
+            <!-- Profielfoto, opleiding, werkervaring en talen -->
+            <section class="container">
+                <div class="row g-4 g-xl-5">
+                    <aside class="col-lg-4">
+                        <div class="profile-card">
+                            <img
+                                src="images/elias.webp"
+                                width="900"
+                                height="900"
+                                alt="Elias Heremans"
+                                class="profile-photo"
+                            />
+                            <div class="profile-details">
+                                <h2>Elias Heremans</h2>
+                                <p>Student programmeren</p>
+                                <p class="location-line">
+                                    <svg
+                                        class="icon"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="M12 1a8 8 0 0 0-8 8c0 6 8 14 8 14s8-8 8-14a8 8 0 0 0-8-8Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"
+                                        />
+                                    </svg>
+                                    Nijlen, België
+                                </p>
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="col-lg-8">
+                        <div class="resume-section">
+                            <h2>Over mij</h2>
+                            <p>
+                                Ik volg het graduaat programmeren aan Thomas More in Geel. HTML en
+                                C# liggen me tot nu toe het best. Daarnaast heb ik al wat ervaring
+                                met Python en JavaScript. Ik ontdek graag hoe ik met code een idee
+                                kan laten werken.
+                            </p>
+                        </div>
+                        <div class="resume-section">
+                            <h2 class="resume-title">Opleiding</h2>
+                            <div class="timeline">
+                                <article>
+                                    <span class="timeline-label">HUIDIGE OPLEIDING</span>
+                                    <h3>Graduaat programmeren</h3>
+                                    <p>Thomas More · Geel</p>
+                                    <p>
+                                        Een praktische opleiding waarin ik leer programmeren en stap
+                                        voor stap mijn technische basis opbouw.
+                                    </p>
+                                </article>
+                                <article>
+                                    <span class="timeline-label">HOGER ONDERWIJS</span>
+                                    <h3>Revalidatiewetenschappen en kinesitherapie</h3>
+                                    <p>Universiteit Antwerpen · Een half jaar gevolgd</p>
+                                </article>
+                                <article>
+                                    <span class="timeline-label">SECUNDAIR ONDERWIJS</span>
+                                    <h3>Sportwetenschappen &amp; STEM</h3>
+                                    <p>
+                                        Begonnen in STEM-wetenschappen en vanaf het vierde
+                                        middelbaar overgestapt naar sportwetenschappen.
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="resume-section">
+                            <h2 class="resume-title">Werkervaring</h2>
+                            <article class="work-entry">
+                                <div>
+                                    <h3>Studentenmedewerker</h3>
+                                    <p>Carrefour · Lier</p>
+                                </div>
+                                <span class="tag">Vakantiewerk</span>
+                            </article>
+                            <p>
+                                Twee kerstvakanties van telkens drie weken en een maand augustus
+                                werkte ik in verschillende afdelingen. Ik leerde er bijspringen waar
+                                nodig en samenwerken met collega’s.
+                            </p>
+                            <a href="ervaring.html">Meer over mijn ervaringen →</a>
+                        </div>
+                        <div class="resume-section">
+                            <h2 class="resume-title">Talen</h2>
+                            <div class="row g-3 language-list">
+                                <div class="col-sm-4">
+                                    <div>
+                                        <h3>Nederlands</h3>
+                                        <p>Vloeiend</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div>
+                                        <h3>Engels</h3>
+                                        <p>Vloeiend</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div>
+                                        <h3>Frans</h3>
+                                        <p>Redelijk vloeiend</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills: meerdere logo’s tegelijk zichtbaar met de Splide-plugin -->
+            <section class="skills-section section-space">
+                <div class="container">
+                    <div class="section-title">
+                        <div>
+                            <h2>Skills in ontwikkeling</h2>
+                        </div>
+                    </div>
+                    <div
+                        class="splide"
+                        id="skills-carousel"
+                        aria-label="Mijn programmeervaardigheden"
+                    >
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="skill-card">
+                                        <img
+                                            src="images/skills/html.svg"
+                                            width="72"
+                                            height="72"
+                                            alt="HTML logo"
+                                            loading="lazy"
+                                        />
+                                        <h3>HTML</h3>
+                                        <p>Mijn basis voor het web</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="skill-card">
+                                        <img
+                                            src="images/skills/css.svg"
+                                            width="72"
+                                            height="72"
+                                            alt="CSS logo"
+                                            loading="lazy"
+                                        />
+                                        <h3>CSS</h3>
+                                        <p>Vorm en structuur</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="skill-card">
+                                        <img
+                                            src="images/skills/csharp.svg"
+                                            width="72"
+                                            height="72"
+                                            alt="C# logo"
+                                            loading="lazy"
+                                        />
+                                        <h3>C#</h3>
+                                        <p>Logisch problemen oplossen</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="skill-card">
+                                        <img
+                                            src="images/skills/python.svg"
+                                            width="72"
+                                            height="72"
+                                            alt="Python logo"
+                                            loading="lazy"
+                                        />
+                                        <h3>Python</h3>
+                                        <p>Eerste ervaring</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="skill-card">
+                                        <img
+                                            src="images/skills/javascript.svg"
+                                            width="72"
+                                            height="72"
+                                            alt="JavaScript logo"
+                                            loading="lazy"
+                                        />
+                                        <h3>JavaScript</h3>
+                                        <p>Eerste ervaring</p>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="skill-card">
+                                        <img
+                                            src="images/skills/bootstrap.svg"
+                                            width="72"
+                                            height="72"
+                                            alt="Bootstrap logo"
+                                            loading="lazy"
+                                        />
+                                        <h3>Bootstrap</h3>
+                                        <p>Responsive ontwerpen</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="carousel-hint">
+                        Gebruik de pijlen of swipe om alle skills te bekijken.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer met contactlinks en copyright -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row align-items-center gy-3">
+                    <div class="col-md-6"><p class="mb-0">&copy; 2026 Elias Heremans</p></div>
+                    <div class="col-md-6">
+                        <div class="social-links">
+                            <a
+                                href="mailto:elias.heremans3@gmail.com"
+                                aria-label="E-mail naar Elias"
+                            >
+                                <svg
+                                    class="icon"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M2 4h20v16H2V4Zm2 2v1l8 6 8-6V6H4Zm16 12V9.5l-8 6-8-6V18h16Z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/elias-heremans-096a8b39a/"
+                                aria-label="Elias op LinkedIn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    class="icon"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M4.98 3.5a2.49 2.49 0 1 1-4.98 0 2.49 2.49 0 0 1 4.98 0ZM.4 7h4.2v13H.4V7Zm6.8 0h4v1.8h.1c.6-1.1 1.9-2.2 3.9-2.2 4.2 0 5 2.7 5 6.2V20H16v-6.4c0-1.5 0-3.5-2.1-3.5s-2.4 1.7-2.4 3.4V20H7.2V7Z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="tel:+32468594806" aria-label="Bel Elias">
+                                <svg
+                                    class="icon"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="m6.6 2 3 5-2.3 2.2c1.4 3 3.5 5.2 6.5 6.6L16 13.5l5 3c-1.1 4-3 5.6-6.8 4C8.4 18 4 13.6 1.5 7.8.1 4.5 2.4 2.7 6.6 2Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
