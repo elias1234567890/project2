@@ -475,6 +475,76 @@ body.project2 .tag {
     font-size: 0.85rem;
 }
 
+body.project2 .hobby-carousel {
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #222;
+}
+
+body.project2 .hobby-carousel .carousel-item img {
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+}
+
+body.project2 .hobby-carousel .carousel-caption {
+    padding: 15px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+}
+
+body.project2 .hobby-carousel .carousel-caption p {
+    margin-bottom: 0;
+}
+
+body.project2 .hobby-carousel .carousel-control-prev span,
+body.project2 .hobby-carousel .carousel-control-next span {
+    padding: 0 10px;
+    border-radius: 50%;
+    background-color: #222;
+    color: white;
+    font-size: 1.8rem;
+}
+
+body.project2 .hobby-stories article {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d5e5eb;
+}
+
+body.project2 .contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    overflow-wrap: anywhere;
+}
+
+body.project2 .contact-detail small {
+    display: block;
+}
+
+body.project2 .contact-detail > span:last-child {
+    margin-left: auto;
+}
+
+body.project2 .form-panel {
+    padding: 28px;
+    border-radius: 6px;
+    background-color: rgb(251, 183, 248);
+}
+
+body.project2 .form-label {
+    font-weight: bold;
+}
+
+body.project2 .form-disclosure {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+}
+
 @media (max-width: 767.98px) {
     body.project2 h1 {
         font-size: 2rem;
@@ -508,5 +578,26 @@ body.project2 .tag {
 
     body.project2 .splide {
         padding: 0 32px;
+    }
+
+    body.project2 .hobby-carousel .carousel-item img {
+        height: 370px;
+    }
+
+    body.project2 .hobby-carousel .carousel-caption {
+        left: 12%;
+        right: 12%;
+    }
+
+    body.project2 .hobby-carousel .carousel-caption h2 {
+        font-size: 1.4rem;
+    }
+
+    body.project2 .hobby-carousel .carousel-caption p {
+        font-size: 0.85rem;
+    }
+
+    body.project2 .form-panel {
+        padding: 20px;
     }
 }

@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="nl">
+    <head>
+        <!-- Paginatitel, metadata en opmaakbestanden -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Voetbal, videogames, programmeren, films en skiën: de hobby’s van Elias Heremans."
+        />
+        <meta name="author" content="Elias Heremans" />
+        <meta name="theme-color" content="#ffffff" />
+        <title>Hobby’s en interesses | Elias Heremans</title>
+        <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+        <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="vendor/bootstrap/bootstrap.bundle.min.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </head>
+    <body id="top" class="project2">
+        <a class="skip-link" href="#inhoud">Naar de inhoud</a>
+
+        <!-- Navigatie: hetzelfde menu op elke pagina -->
+        <header class="site-header">
+            <nav class="navbar navbar-expand-lg container" aria-label="Hoofdnavigatie">
+                <a class="navbar-brand brand" href="index.html">Elias Heremans</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navigatie"
+                    aria-controls="navigatie"
+                    aria-expanded="false"
+                    aria-label="Menu openen of sluiten"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigatie">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ervaring.html">Ervaring</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="hobbies_en_interesses.html">
+                                Hobby’s
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                Contact
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hoofdinhoud van deze pagina -->
+        <main id="inhoud">
+            <section class="page-heading container">
+                <h1>Hobby’s en interesses</h1>
+                <p>
+                    Mijn vrije tijd? Die breng ik graag actief door. Op het voetbalveld, op de piste
+                    of in een andere wereld achter mijn scherm.
+                </p>
+            </section>
+
+            <!-- Bootstrap-slider met zes afbeeldingen -->
+            <section class="container">
+                <div
+                    id="hobby-carousel"
+                    class="carousel slide hobby-carousel"
+                    role="region"
+                    aria-roledescription="carrousel"
+                    aria-label="Mijn hobby’s in zes beelden"
+                    tabindex="0"
+                >
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            data-bs-target="#hobby-carousel"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1: Voetbal"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#hobby-carousel"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2: Videogames"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#hobby-carousel"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3: Programmeren"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#hobby-carousel"
+                            data-bs-slide-to="3"
+                            aria-label="Slide 4: Films &amp; series"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#hobby-carousel"
+                            data-bs-slide-to="4"
+                            aria-label="Slide 5: Skiën"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#hobby-carousel"
+                            data-bs-slide-to="5"
+                            aria-label="Slide 6: Samen bezig zijn"
+                        ></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img
+                                src="images/voetbal.webp"
+                                class="d-block w-100"
+                                width="1400"
+                                height="934"
+                                alt="Voetbal op een groen veld"
+                                fetchpriority="high"
+                            />
+                            <div class="carousel-caption">
+                                <h2>Voetbal</h2>
+                                <p>Samen op het veld. Samen voor de overwinning.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="images/gaming.webp"
+                                class="d-block w-100"
+                                width="1400"
+                                height="934"
+                                alt="Computers en schermen tijdens een gaming-evenement"
+                                loading="lazy"
+                            />
+                            <div class="carousel-caption">
+                                <h2>Videogames</h2>
+                                <p>Een uitdaging, een nieuw spel of een avond met vrienden.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="images/programmeren.webp"
+                                class="d-block w-100"
+                                width="1400"
+                                height="934"
+                                alt="Laptop met code op een bureau"
+                                loading="lazy"
+                            />
+                            <div class="carousel-caption">
+                                <h2>Programmeren</h2>
+                                <p>Van een eerste idee naar code die werkt.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="images/films.webp"
+                                class="d-block w-100"
+                                width="1400"
+                                height="934"
+                                alt="Rode stoelen in een bioscoopzaal"
+                                loading="lazy"
+                            />
+                            <div class="carousel-caption">
+                                <h2>Films & series</h2>
+                                <p>Even opgaan in een ander verhaal.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="images/skien.webp"
+                                class="d-block w-100"
+                                width="1400"
+                                height="934"
+                                alt="Besneeuwde bergen onder een blauwe hemel"
+                                loading="lazy"
+                            />
+                            <div class="carousel-caption">
+                                <h2>Skiën</h2>
+                                <p>Frisse berglucht en tijd met mijn familie.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                src="images/samenwerken.webp"
+                                class="d-block w-100"
+                                width="1400"
+                                height="934"
+                                alt="Een groep mensen aan een tafel"
+                                loading="lazy"
+                            />
+                            <div class="carousel-caption">
+                                <h2>Samen bezig zijn</h2>
+                                <p>Het plezier zit ook in de mensen om je heen.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#hobby-carousel"
+                        data-bs-slide="prev"
+                        aria-label="Vorige hobby"
+                    >
+                        <span aria-hidden="true">←</span>
+                    </button>
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#hobby-carousel"
+                        data-bs-slide="next"
+                        aria-label="Volgende hobby"
+                    >
+                        <span aria-hidden="true">→</span>
+                    </button>
+                </div>
+                <p class="carousel-hint">
+                    Zes beelden, een kijkje in mijn vrije tijd. Gebruik de pijlen of swipe.
+                </p>
+            </section>
+
+            <!-- Extra uitleg over mijn hobby’s -->
+            <section class="container section-space hobby-stories">
+                <div class="row g-5">
+                    <div class="col-12">
+                        <article>
+                            <div>
+                                <h3>Voetbal zit in mijn ritme</h3>
+                                <p>
+                                    Ik voetbal al sinds mijn kindertijd en speel bij de reserven van
+                                    KFC Nijlen. Trainingen en wedstrijden geven me de kans om beter
+                                    te worden en samen met mijn ploeggenoten naar een resultaat toe
+                                    te werken.
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Een nieuwe wereld ontdekken</h3>
+                                <p>
+                                    Videogames speel ik om te ontspannen, mezelf uit te dagen en
+                                    plezier te maken met vrienden. Ook films en series kunnen me
+                                    helemaal meenemen in een goed verhaal. Het hangt van mijn
+                                    stemming af welk genre ik kies.
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Uitzoeken hoe iets werkt</h3>
+                                <p>
+                                    Programmeren is voor mij ook een interesse buiten de les. Ik
+                                    vind het leuk om logisch na te denken, een fout op te sporen en
+                                    een idee te zien werken. Er valt altijd iets nieuws te leren.
+                                </p>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <h3>Even de bergen in</h3>
+                                <p>
+                                    Elk jaar ga ik één of twee keer skiën met mijn familie. De
+                                    combinatie van snelheid, buiten zijn en het uitzicht maakt dat
+                                    ik er telkens naar uitkijk. Samen op de piste staan is voor mij
+                                    ook even weg zijn van het dagelijkse ritme.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer met contactlinks en copyright -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row align-items-center gy-3">
+                    <div class="col-md-6"><p class="mb-0">&copy; 2026 Elias Heremans</p></div>
+                    <div class="col-md-6">
+                        <div class="social-links">
+                            <a
+                                href="mailto:elias.heremans3@gmail.com"
+                                aria-label="E-mail naar Elias"
+                            >
+                                <svg
+                                    class="icon"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M2 4h20v16H2V4Zm2 2v1l8 6 8-6V6H4Zm16 12V9.5l-8 6-8-6V18h16Z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/elias-heremans-096a8b39a/"
+                                aria-label="Elias op LinkedIn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    class="icon"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M4.98 3.5a2.49 2.49 0 1 1-4.98 0 2.49 2.49 0 0 1 4.98 0ZM.4 7h4.2v13H.4V7Zm6.8 0h4v1.8h.1c.6-1.1 1.9-2.2 3.9-2.2 4.2 0 5 2.7 5 6.2V20H16v-6.4c0-1.5 0-3.5-2.1-3.5s-2.4 1.7-2.4 3.4V20H7.2V7Z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="tel:+32468594806" aria-label="Bel Elias">
+                                <svg
+                                    class="icon"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="m6.6 2 3 5-2.3 2.2c1.4 3 3.5 5.2 6.5 6.6L16 13.5l5 3c-1.1 4-3 5.6-6.8 4C8.4 18 4 13.6 1.5 7.8.1 4.5 2.4 2.7 6.6 2Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
