@@ -1,36 +1,296 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact pagina</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/fe875ab16f.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="afbeeldingen/favicon.ico">
-</head>
+    <head>
+        <!-- Paginatitel, metadata en opmaakbestanden -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Neem contact op met Elias Heremans via e-mail, telefoon, LinkedIn of het contactformulier."
+        />
+        <meta name="author" content="Elias Heremans" />
+        <meta name="theme-color" content="#ffffff" />
+        <title>Contact | Elias Heremans</title>
+        <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 
-<body>
-    <ul class ="navigatie">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="ervaring.html">Ervaring</a></li>
-        <li><a href="hobbies_en_Interesses.html">Hobbies en Interesses</a></li>
-        <li><a href="contact.html">Contacteer mij</a></li>
-    </ul>
+        <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="vendor/bootstrap/bootstrap.bundle.min.js" defer></script>
+    </head>
+    <body id="top">
+        <a class="skip-link" href="#inhoud">Naar de inhoud</a>
 
-    <div id="rowcontact">
-        <div class="column">
-            <p>
-                <i class="fa-solid fa-envelope"></i> elias.heremans3@gmail.com
-            </p>
-            <p>
-                <i class="fa-solid fa-phone"></i> +32 468 59 48 06
-            </p>
-            <p>
-                <a href="https://www.linkedin.com/in/elias-heremans-096a8b39a/">Mijn LinkedIn</a>
-            </p>
-        </div>
-    </div>
-    
-</body>
+        <!-- Navigatie: hetzelfde menu op elke pagina -->
+        <header class="site-header">
+            <nav class="navbar navbar-expand-lg container" aria-label="Hoofdnavigatie">
+                <a class="navbar-brand brand" href="index.html">Elias Heremans</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navigatie"
+                    aria-controls="navigatie"
+                    aria-expanded="false"
+                    aria-label="Menu openen of sluiten"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigatie">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ervaring.html">Ervaring</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hobbies_en_interesses.html">Hobby’s</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">
+                                Contact
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hoofdinhoud van deze pagina -->
+        <main id="inhoud">
+            <section class="page-heading container">
+                <h1>Contacteer mij</h1>
+                <p>
+                    Een vraag over mijn opleiding, interesse in mijn skills of gewoon even
+                    kennismaken? Laat gerust iets van je horen.
+                </p>
+            </section>
+            <section class="container">
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <!-- Contactgegevens -->
+                        <div>
+                            <h2>Laten we contact houden.</h2>
+                            <p>
+                                Ik studeer programmeren aan Thomas More in Geel en woon in Nijlen,
+                                België.
+                            </p>
+                            <a class="contact-detail" href="mailto:elias.heremans3@gmail.com">
+                                <span>
+                                    <svg
+                                        class="icon"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="M2 4h20v16H2V4Zm2 2v1l8 6 8-6V6H4Zm16 12V9.5l-8 6-8-6V18h16Z"
+                                        />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <small>E-MAIL</small>
+                                    elias.heremans3@gmail.com
+                                </span>
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                            <a class="contact-detail" href="tel:+32468594806">
+                                <span>
+                                    <svg
+                                        class="icon"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="m6.6 2 3 5-2.3 2.2c1.4 3 3.5 5.2 6.5 6.6L16 13.5l5 3c-1.1 4-3 5.6-6.8 4C8.4 18 4 13.6 1.5 7.8.1 4.5 2.4 2.7 6.6 2Z"
+                                        />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <small>TELEFOON</small>
+                                    +32 468 59 48 06
+                                </span>
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                            <a
+                                class="contact-detail"
+                                href="https://www.linkedin.com/in/elias-heremans-096a8b39a/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span>
+                                    <svg
+                                        class="icon"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="M4.98 3.5a2.49 2.49 0 1 1-4.98 0 2.49 2.49 0 0 1 4.98 0ZM.4 7h4.2v13H.4V7Zm6.8 0h4v1.8h.1c.6-1.1 1.9-2.2 3.9-2.2 4.2 0 5 2.7 5 6.2V20H16v-6.4c0-1.5 0-3.5-2.1-3.5s-2.4 1.7-2.4 3.4V20H7.2V7Z"
+                                        />
+                                    </svg>
+                                </span>
+                                <span>
+                                    <small>LINKEDIN</small>
+                                    Elias Heremans
+                                </span>
+                                <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="form-panel">
+                            <h2>Stuur me een bericht</h2>
+                            <p>Velden met een * zijn verplicht.</p>
+                            <!-- De browser controleert de verplichte velden voor het verzenden -->
+                            <form
+                                action="https://tm-statweb.be/forms.php"
+                                method="post"
+                                id="contact-form"
+                            >
+                                <div class="row g-3">
+                                    <div class="col-sm-6">
+                                        <label for="voornaam" class="form-label">Voornaam *</label>
+                                        <input
+                                            class="form-control"
+                                            type="text"
+                                            id="voornaam"
+                                            name="voornaam"
+                                            autocomplete="given-name"
+                                            placeholder="Je voornaam"
+                                            required
+                                            maxlength="80"
+                                            pattern=".*\S.*"
+                                        />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="naam" class="form-label">Achternaam *</label>
+                                        <input
+                                            class="form-control"
+                                            type="text"
+                                            id="naam"
+                                            name="naam"
+                                            autocomplete="family-name"
+                                            placeholder="Je achternaam"
+                                            required
+                                            maxlength="100"
+                                            pattern=".*\S.*"
+                                        />
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="email" class="form-label">E-mailadres *</label>
+                                        <input
+                                            class="form-control"
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            autocomplete="email"
+                                            placeholder="jij@voorbeeld.be"
+                                            required
+                                            maxlength="254"
+                                        />
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="skill" class="form-label">
+                                            In welke skill ben je geïnteresseerd?
+                                        </label>
+                                        <select class="form-select" id="skill" name="skill">
+                                            <option value="">Kies een skill (optioneel)</option>
+                                            <option>HTML</option>
+                                            <option>CSS</option>
+                                            <option>C#</option>
+                                            <option>Python</option>
+                                            <option>JavaScript</option>
+                                            <option>Bootstrap</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="vraag" class="form-label">
+                                            Je vraag of bericht
+                                        </label>
+                                        <textarea
+                                            class="form-control"
+                                            id="vraag"
+                                            name="vraag"
+                                            rows="5"
+                                            maxlength="5000"
+                                            placeholder="Waarover wil je het hebben?"
+                                        ></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn contact-button w-100" type="submit">
+                                            Verstuur je bericht
+                                            <span aria-hidden="true">↗</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="form-disclosure">
+                                    Bij verzenden verwerkt de formulierdienst van Thomas More je
+                                    ingevulde gegevens. Je gaat daarna naar hun bevestigingspagina.
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer met contactlinks en copyright -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row align-items-center gy-3">
+                    <div class="col-md-6"><p class="mb-0">&copy; 2026 Elias Heremans</p></div>
+                    <div class="col-md-6">
+                        <div class="social-links">
+                            <a
+                                href="mailto:elias.heremans3@gmail.com"
+                                aria-label="E-mail naar Elias"
+                            >
+                                <svg
+                                    class="icon"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M2 4h20v16H2V4Zm2 2v1l8 6 8-6V6H4Zm16 12V9.5l-8 6-8-6V18h16Z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/elias-heremans-096a8b39a/"
+                                aria-label="Elias op LinkedIn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <svg
+                                    class="icon"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="M4.98 3.5a2.49 2.49 0 1 1-4.98 0 2.49 2.49 0 0 1 4.98 0ZM.4 7h4.2v13H.4V7Zm6.8 0h4v1.8h.1c.6-1.1 1.9-2.2 3.9-2.2 4.2 0 5 2.7 5 6.2V20H16v-6.4c0-1.5 0-3.5-2.1-3.5s-2.4 1.7-2.4 3.4V20H7.2V7Z"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="tel:+32468594806" aria-label="Bel Elias">
+                                <svg
+                                    class="icon"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        d="m6.6 2 3 5-2.3 2.2c1.4 3 3.5 5.2 6.5 6.6L16 13.5l5 3c-1.1 4-3 5.6-6.8 4C8.4 18 4 13.6 1.5 7.8.1 4.5 2.4 2.7 6.6 2Z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
